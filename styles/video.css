@@ -1,0 +1,100 @@
+.video-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  z-index: 0;
+}
+
+.thumbnail {
+  width: 100%;
+}
+.video-thumbnail {
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-preview {
+  position: relative;
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+.video-length {
+  position: absolute;
+  bottom: 10px;
+  right: 6px;
+  background-color: black;
+  color: white;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 2px 3px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  border-radius: 50px;
+  width: 36px;
+}
+
+.video-title {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.video-author,
+.video-stats {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+
+.video-author {
+  margin-bottom: 5px;
+}
+
+.profile-picture-container{
+  position: relative;
+  display: inline-block; /* I don't find this is useful*/
+}
+
+.channel-tooltip {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10000;
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  width: 230px;
+  pointer-events: none;
+  transition: opacity 0.20s;
+}
+
+.profile-picture-container:hover .channel-tooltip{
+  opacity: 1;
+}
+
+.channel-tooltip .profile-picture {
+  width: 50px;
+}
+
+.channel-name {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Roboto, Arial;
+  margin-bottom: 4px;
+  margin-top: 5px;
+}
+
+.subscribers-count {
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  color: rgb(107, 107, 107);
+}

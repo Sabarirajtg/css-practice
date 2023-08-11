@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>CSS Grid</h1>
+    <div style="display: grid; grid-template-columns: 200px 70px">
+      <!-- 11a. exercise !-->
+      <div style="background-color: lightblue">200px</div>
+      <div style="background-color: antiquewhite">75px</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 50px 1fr 75px">
+      <!-- 11b. exercise !-->
+      <div style="background-color: antiquewhite">col1</div>
+      <div style="background-color: lightblue">col2</div>
+      <div style="background-color: antiquewhite">col3</div>
+    </div>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      "
+    >
+      <!-- 11b. exercise !-->
+      <div style="background-color: antiquewhite">col1</div>
+      <div style="background-color: lightblue">col2</div>
+      <div style="background-color: antiquewhite">col3</div>
+      <div style="background-color: antiquewhite">col4</div>
+      <div style="background-color: lightblue">col5</div>
+      <div style="background-color: antiquewhite">col6</div>
+      <div style="background-color: lightblue">col7</div>
+      <div style="background-color: antiquewhite">col8</div>
+    </div>
+    <h1>Flex box</h1>
+    <div style="display: flex; flex-direction: row">
+      <!-- 12a. exercise !-->
+      <div style="background-color: antiquewhite; width: 200px">200px</div>
+      <div style="background-color: lightblue; width: 70px">70px</div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+      <!-- 12b. exercise !-->
+      <div style="background-color: antiquewhite; width: 50px">item1</div>
+      <div style="background-color: lightblue; flex: 1">item2</div>
+      <div style="background-color: antiquewhite; width: 75px">item3</div>
+    </div>
+    <div
+      style="display: flex; flex-direction: row; justify-content: space-between"
+    >
+      <!-- 12c. exercise !-->
+      <div style="background-color: antiquewhite">item1</div>
+      <div style="background-color: lightblue">item2</div>
+      <div style="background-color: antiquewhite">item3</div>
+      <div style="background-color: lightblue">item4</div>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-color: gray;
+        border-style: solid;
+        align-items: center;
+        height: 50px;
+      "
+    >
+      <!-- 12d. exercise !-->
+      <div style="background-color: antiquewhite">item1</div>
+      <div style="background-color: lightblue">item2</div>
+    </div>
+  </body>
+</html>
